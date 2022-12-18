@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/fonts/baloo-chettan-2-v16-latin-regular.woff);
+}
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/fonts/baloo-chettan-2-v16-latin-600.woff);
+}
+@font-face {
+    font-family: 'Baloo Chettan 2';
+    font-style: normal;
+    font-weight: 800;
+    src: url(./assets/fonts/baloo-chettan-2-v16-latin-800.woff);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Baloo Chettan 2';
+    font-style: normal;
+    font-weight: 400;
+    color: #e9e8e4;
+}
+h1,
+h2{
+    text-transform: uppercase;
+}
+h2{
+    padding-left: 5px;
+    color: #000000;
+}
+h2::after{
+    display: block;
+    content: '';
+    width: 300px;
+    height: 3px;
+    margin-bottom: 10px;
+    background: #000000;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+header{
+    grid-area: head;
+}
+aside{
+    grid-area: aside;
+    background: #aba8a4;
+}
+main{
+    grid-area: main;
+    background-color: #e9e8e4;
+    color: #4c4a47;
+}
+footer{
+    grid-area: foot;
+    background-color: #e9e8e4;
+    color: #4c4a47;
+}
+.full_wrap{
+    max-width: 1130px;
+    margin: 0 auto;
+    background: #4c4a47;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.grid_container{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        'head main'
+        'aside main'
+        'aside foot';
+}
+.wrapper{
+    margin: 0 30px;
+}
+.title_wrap{
+    display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #4c4a47;
+    color: #e9e8e4;
+}
+.photo_wrap{
+    margin-bottom: 15px;
+}
+.img_my_photo{
+    border-radius: 3px;
+}
+.header_title{
+    width: 250px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 50px;
+}
+.header_title_desc{
+    text-transform: uppercase;
+}
+.about_me{
+    margin: 10px 0 20px;
+}
+.about_me_desc{
+    padding-left: 10px;
+}
+.contacts{
+    margin-bottom: 20px;
+}
+.contacts_list_item{
+    padding-left: 30px;
+}
+.contacts_item{
+    font-weight: bold;
+    color: #4c4a47;
+}
+.phone{
+    background: url(./assets/svg/contact/phone-icon.svg) no-repeat left;
+}
+.email{
+    background: url(./assets/svg/contact/email-icon.svg) no-repeat left;
+}
+.telegram{
+    background: url(./assets/svg/contact/telegram-icon.svg) no-repeat left;
+}
+.discord{
+    background: url(./assets/svg/contact/discord-icon.svg) no-repeat left;
+}
+.adress{
+    background: url(./assets/svg/contact/location-icon.svg) no-repeat left;
+}
+.languages_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.languages_list_item{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #4c4a47;
+}
+.level{
+    width: 180px;
+    height: 30px;
+    background: url(./assets/svg/language/white-icon.svg) repeat;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.nav{
+    position: fixed;
+    top: 8px;
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 14px;
+}
+.nav_list_item{
+    margin-right: 20px;
+}
+.nav_list_item_link{
+    color: #e9e8e4;
+}
+.nav_list_item_link:hover,
+.nav_list_item_link:focus,
+.nav_list_item_link:active{
+    opacity: .5;
+}
+.work_experience{
+    margin: 10px 0 20px;
+}
+.work_experience_item{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+.work_experience_item_date{
+    min-width: 120px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.work_experience_list_wrap{
+    padding-left: 50px;
+}
+.work_experience_item_job{
+    font-weight: bold;
+}
+.education{
+    margin-bottom: 20px;
+}
+.education_list_item{
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+.educ{
+    font-weight: bold;
+}
+.university_faculty,
+.courses_list{
+    padding-left: 50px;
+}
+.courses_list_item{
+    display: flex;
+    flex-shrink: 1;
+}
+.courses_list_item_link{
+    display: inline-block;
+    color: #4c4a47;
+}
+.courses_list_item_link:hover,
+.courses_list_item_link:focus,
+.courses_list_item_link:active{
+    font-weight: bold;
+}
+.show_more{
+    width: 40px;
+    margin-left: 10px;
+    background: url(./assets/img/arr-icon.png) no-repeat left;
+    cursor: pointer;
+}
+.show_more:hover{
+    background: url(./assets/img/arr-icon.png) no-repeat right;
+    transition: .5s;
+}
+.itgid_list,
+.dmitrylavrik_list{
+    display: none;
+    margin: 30px 10px;
+    font-weight: normal;
+}
+.dmitrylavrik_list:last-child {
+    margin-bottom: 0;
+}
+.skills{
+    margin-bottom: 20px;
+}
+.skills_list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.skills_list_item{
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.skills_list_item_desc{
+    margin-right: 20px;
+}
+.progress_wrap {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #aba8a4;
+}
+.progress_bar {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4c4a47;
+    }
+.progress_bar::after {
+    content: attr(data-value) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 8px;
+    color: #e9e8e4;
+    transform: translateX(-50%) translateY(-50%);
+}
+.code_example{
+    margin-bottom: 20px;
+}
+.footer_wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    border-top: 3px solid #aba8a4;
+}
+.footer_date{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
