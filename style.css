@@ -3,21 +3,18 @@
     margin: 0;
     padding: 0;
 }
-/* baloo-chettan-2-regular - latin */
 @font-face {
     font-family: 'Baloo Chettan 2';
     font-style: normal;
     font-weight: 400;
     src: url(./assets/fonts/baloo-chettan-2-v16-latin-regular.woff);
 }
-/* baloo-chettan-2-600 - latin */
 @font-face {
     font-family: 'Baloo Chettan 2';
     font-style: normal;
     font-weight: 600;
     src: url(./assets/fonts/baloo-chettan-2-v16-latin-600.woff);
 }
-/* baloo-chettan-2-800 - latin */
 @font-face {
     font-family: 'Baloo Chettan 2';
     font-style: normal;
@@ -93,7 +90,6 @@ footer{
     display: flex;
     align-items: center;
 }
-/* ********HEADER START*********** */
 .header{
     display: flex;
     flex-direction: column;
@@ -117,17 +113,12 @@ footer{
 .header_title_desc{
     text-transform: uppercase;
 }
-/* ********HEADER END*********** */
-/* ********ASIDE START*********** */
-/* ===========about_me start*/
 .about_me{
     margin: 10px 0 20px;
 }
 .about_me_desc{
     padding-left: 10px;
 }
-/* ===========about_me end*/
-/* ===========contacts start*/
 .contacts{
     margin-bottom: 20px;
 }
@@ -153,8 +144,6 @@ footer{
 .adress{
     background: url(./assets/svg/contact/location-icon.svg) no-repeat left;
 }
-/* ===========contacts end*/
-/* ===========languages start*/
 .languages_list{
     display: flex;
     flex-direction: column;
@@ -173,15 +162,11 @@ footer{
     height: 30px;
     background: url(./assets/svg/language/white-icon.svg) repeat;
 }
-/* ===========languages end*/
-/* ********ASIDE END*********** */
-/* ********MAIN START*********** */
 .main{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
-/* ===========navigation start*/
 .nav{
     position: fixed;
     top: 8px;
@@ -203,8 +188,6 @@ footer{
 .nav_list_item_link:active{
     opacity: .5;
 }
-/* ===========navigation end*/
-/* ===========work_experience start*/
 .work_experience{
     margin: 10px 0 20px;
 }
@@ -224,8 +207,6 @@ footer{
 .work_experience_item_job{
     font-weight: bold;
 }
-/* ===========work_experience end*/
-/* ===========education start*/
 .education{
     margin-bottom: 20px;
 }
@@ -272,8 +253,6 @@ footer{
 .dmitrylavrik_list:last-child {
     margin-bottom: 0;
 }
-/* ===========education end*/
-/* ===========skills start*/
 .skills{
     margin-bottom: 20px;
 }
@@ -301,14 +280,14 @@ footer{
     height: 10px;
     border-radius: 10px;
     background-color: #aba8a4;
-  }
-  .progress_bar {
+}
+.progress_bar {
     display: block;
     height: 100%;
     border-radius: 10px;
     background-color: #4c4a47;
-  }
-  .progress_bar::after {
+    }
+.progress_bar::after {
     content: attr(data-value) '%';
     position: absolute;
     top: 50%;
@@ -316,15 +295,10 @@ footer{
     font-size: 8px;
     color: #e9e8e4;
     transform: translateX(-50%) translateY(-50%);
-  }
-/* ===========skills end*/
-/* ===========code example start*/
+}
 .code_example{
     margin-bottom: 20px;
 }
-/* ===========code example end*/
-/* ********MAIN END*********** */
-/* ********FOOTER START*********** */
 .footer_wrap{
     display: flex;
     flex-wrap: nowrap;
@@ -332,14 +306,12 @@ footer{
     align-items: center;
     padding: 0 60px;
     border-top: 3px solid #aba8a4;
-
 }
 .footer_date{
     font-size: 40px;
     font-weight: bold;
     color: #000000;
 }
-/* ********FOOTER END*********** */
 .active{
     display: block;
 }
