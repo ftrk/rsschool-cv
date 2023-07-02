@@ -24,6 +24,28 @@ I love challenging tasks and puzzles, and I enjoy solving them. My best qualitie
 ## Code Examples
 
 ```
+<script setup>
+    import {ref, defineEmits, defineProps, watch} from 'vue';
+
+    const emits = defineEmits(['updateInput'])
+    const {body, item} = defineProps({
+        body: String,
+        item: Object,
+    })
+
+    const calcInput = ref(body || ''),
+        calcElems = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, 'x', ''];
+
+    const action = n => {
+        if(n === ''){
+            calcInput.value = calcInput.value.slice(0, -1)
+            return
+        }
+        calcInput.value += n
+    };
+
+    watch(calcInput, () => {emits('updateInput', calcInput)})
+</script>
 
 ```
 
