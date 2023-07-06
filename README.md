@@ -1,1 +1,1 @@
-# rsschool-cv
+https://ftrk.github.io/rsschool-cv/
